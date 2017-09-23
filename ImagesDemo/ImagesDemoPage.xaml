@@ -4,5 +4,17 @@
     xmlns:local="clr-namespace:ImagesDemo"
     x:Class="ImagesDemo.ImagesDemoPage"
 >
-    <Image Source="http://lorempixel.com/1920/1080/sports/7/" />
+    <AbsoluteLayout>
+        <ActivityIndicator
+            Color="Red"
+            IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+        />
+        <Image
+            x:Name="image" Aspect="AspectFill"
+            AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+            AbsoluteLayout.LayoutFlags="All"
+        />
+    </AbsoluteLayout>
 </ContentPage>
