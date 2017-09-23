@@ -7,9 +7,7 @@ namespace ImagesDemo
         public ImagesDemoPage()
         {
             InitializeComponent();
-            image.Source = ImageSource.FromResource(
-                "ImagesDemo.Images.background.jpg"
-            );
+            btn.Image = (FileImageSource)ImageSource.FromFile("clock.png");
         }
     }
 }

@@ -4,5 +4,5 @@
     xmlns:local="clr-namespace:ImagesDemo"
     x:Class="ImagesDemo.ImagesDemoPage"
 >
-    <Image x:Name="image" Aspect="AspectFill" />
+    <Button x:Name="btn" />
 </ContentPage>
